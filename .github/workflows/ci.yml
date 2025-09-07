@@ -135,7 +135,7 @@ jobs:
     name: Pre-release to NPM
     if: |
       success() &&
-      github.ref == 'refs/heads/profiled' &&
+      github.ref == 'refs/heads/procfiled' &&
       github.event_name != 'pull_request_target' &&
       !contains(github.event.head_commit.message, '[skip-prerelease]')
 
