@@ -71,8 +71,8 @@ jobs:
     needs: [quality-checks, unit-tests]
     if: |
       failure() &&
-      github.ref == 'refs/heads/procfiled'
-
+      github.ref == 'refs/heads/procfiled' &&
+      github.event_name != 'pull_request_target'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
