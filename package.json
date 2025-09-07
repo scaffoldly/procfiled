@@ -41,7 +41,7 @@
     "email": "security@scaffold.ly"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=20"
   },
   "preferGlobal": true,
   "devDependencies": {
