@@ -47,7 +47,7 @@ c.log('a key', null, 'a log message');
 assertLogged('log', /^a log message$/);
 c.raw = false;
 
-assert.lengthOf(c.trim('a very long string this is!', 5), 6);
+assert.equal(c.trim('a very long string this is!', 5).length, 6);
 
 function makeLogger(collector) {
   return function() {
@@ -65,7 +65,7 @@ function assertLogged(logName, pattern) {
   var actual = logs[logName][logs[logName].length - 1];
 
   Object.keys(logs).forEach(function (log) {
-    assert.lengthOf(logs[log], logName === log ? 1 : 0);
+    assert.equal(logs[log].length, logName === log ? 1 : 0);
   });
 
   assert.match(actual, pattern);
