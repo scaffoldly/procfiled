@@ -2,16 +2,16 @@
   "name": "procfiled",
   "version": "0.0.1-0",
   "homepage": "https://github.com/scaffoldly/procfiled",
-  "description": "Node Implementation of Foreman",
+  "description": "Node.js process manager for Procfile-based applications",
   "author": "Scaffoldly <github.com/scaffoldly>",
   "license": "MIT",
   "keywords": [
-    "foreman",
     "procfiled",
+    "process-manager",
+    "procfile",
     "upstart",
     "commandline",
-    "env",
-    "Procfile"
+    "env"
   ],
   "bin": {
     "procfiled": "nf.js"

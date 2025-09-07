@@ -11,4 +11,4 @@ echo "web: node app.js" > sandbox/Procfile
 node ../nf.js export --out sandbox --type upstart-single \
   --env sandbox/.env --procfile sandbox/Procfile
 
-grep 'env PATH="something-totally-bogus"' sandbox/foreman-web.conf || exit $?
+grep 'env PATH="something-totally-bogus"' sandbox/procfiled-web.conf || exit $?

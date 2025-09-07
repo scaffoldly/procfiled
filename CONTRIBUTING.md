@@ -1,9 +1,9 @@
 ### Contributing ###
 
-Thank you for your interest in `foreman`, an open source project
-administered by StrongLoop.
+Thank you for your interest in `procfiled`, an open source project
+administered by Scaffoldly.
 
-Contributing to `foreman` is easy. In a few simple steps:
+Contributing to `procfiled` is easy. In a few simple steps:
 
   * Ensure that your effort is aligned with the project's roadmap by
     talking to the maintainers, especially if you are going to spend a

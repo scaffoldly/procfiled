@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2012,2015. All Rights Reserved.
-// Node module: foreman
+// Node module: procfiled
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -21,7 +21,7 @@ program.option('-e, --env      <FILE>' ,'load environment from FILE, a comma-sep
 program.option('-p, --port     <PORT>' ,'start indexing ports at number PORT',0);
 
 
-// Foreman Event Bus/Emitter //
+// Procfiled Event Bus/Emitter //
 
 var emitter = new events.EventEmitter();
 emitter.once('killall',function(signal){
@@ -141,7 +141,7 @@ var exporters = require('./lib/exporters');
 
 program
   .command('export [PROCS]')
-  .option('-a, --app  <NAME>' ,'export upstart application as NAME','foreman')
+  .option('-a, --app  <NAME>' ,'export upstart application as NAME','procfiled')
   .option('-u, --user <NAME>' ,'export upstart user as NAME','root')
   .option('-o, --out  <DIR>'  ,'export upstart files to DIR','.')
   .option('-c, --cwd  <DIR>'  ,'change current working directory to DIR')
@@ -149,7 +149,7 @@ program
   .option('-l, --log  <DIR>'  ,'specify upstart log directory','/var/log')
   .option('-t, --type <TYPE>' ,'export file to TYPE (default upstart)','upstart')
   .option('-m, --template <DIR>' ,'use template folder')
-  .description('Export to an upstart job independent of foreman')
+  .description('Export to an upstart job independent of procfiled')
   .action(function(procArgs) {
 
     var command = this;
@@ -251,7 +251,7 @@ program
         conf.envs = envl;
 
         // Write the APP-PROCESS-N.conf File
-        writeout.foreman_app_n(conf,command.out);
+        writeout.procfiled_app_n(conf,command.out);
 
         baseport_i++;
         c.numbers.push({number: i});
@@ -268,14 +268,14 @@ program
       c.envs = envl;
 
       // Write the APP-Process.conf File
-      writeout.foreman_app(c,command.out);
+      writeout.procfiled_app(c,command.out);
 
       baseport_i = 0;
       baseport_j++;
     }
 
     // Write the APP.conf File
-    writeout.foreman(config,command.out);
+    writeout.procfiled(config,command.out);
 
   });
 
