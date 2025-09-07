@@ -153,9 +153,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build package
-        run: npm run build
-
       - name: Generate pre-release version
         id: version
         run: |
