@@ -1,3 +1,15 @@
+2025-09-07, Version 0.0.1-0
+============================
+
+ * Rebranding from "foreman" to "procfiled" (Scaffoldly)
+
+ * Updated package name, CLI interface, and all documentation
+
+ * Updated environment variable from FOREMAN_WORKER_NAME to PROCFILED_WORKER_NAME
+
+ * Updated export system API from foreman_* to procfiled_* functions
+
+
 2018-06-28, Version 3.0.1
 =========================
 
