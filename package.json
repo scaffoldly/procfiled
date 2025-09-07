@@ -1,19 +1,20 @@
 {
-  "name": "foreman",
-  "version": "3.0.1",
-  "homepage": "http://strongloop.github.io/node-foreman/",
+  "name": "procfiled",
+  "version": "0.0.1-0",
+  "homepage": "https://github.com/scaffoldly/procfiled",
   "description": "Node Implementation of Foreman",
-  "author": "StrongLoop, Inc.",
+  "author": "Scaffoldly <github.com/scaffoldly>",
   "license": "MIT",
   "keywords": [
     "foreman",
+    "procfiled",
     "upstart",
     "commandline",
     "env",
     "Procfile"
   ],
   "bin": {
-    "nf": "nf.js"
+    "procfiled": "nf.js"
   },
   "files": [
     "forward.js",
@@ -33,11 +34,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/node-foreman.git"
+    "url": "https://github.com/scaffoldly/procfiled.git"
   },
   "bugs": {
-    "url": "https://github.com/strongloop/node-foreman/issues",
-    "email": "callback@strongloop.com"
+    "url": "https://github.com/scaffoldly/procfiled/issues",
+    "email": "security@scaffold.ly"
   },
   "engines": {
     "node": ">=6"
