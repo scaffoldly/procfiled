@@ -1,0 +1,6 @@
+.claude/
+.github/
+dist/
+node_modules/
+.dockerignore
+Dockerfile

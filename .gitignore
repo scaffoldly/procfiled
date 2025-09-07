@@ -1,9 +1,10 @@
 node_modules
 generated-CHANGES.md
 test/sandbox
-foreman-*.tgz
+procfiled-*.tgz
 coverage/
 checkstyle.xml
 tests.tap
 .travis.yml
 appveyor.yml
+dist/

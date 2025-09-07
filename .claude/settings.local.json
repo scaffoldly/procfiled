@@ -1,24 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Read",
-      "Write",
-      "Edit",
-      "MultiEdit",
-      "Glob",
-      "Grep",
-      "LS",
-      "Task",
-      "TodoRead",
-      "TodoWrite",
-      "WebFetch",
-      "WebSearch",
-      "NotebookRead",
-      "NotebookEdit",
-      "Bash",
-      "Bash(*)",
-      "mcp__*"
+      "Bash(docker build:*)"
     ],
-    "deny": []
+    "deny": [],
+    "ask": []
   }
 }

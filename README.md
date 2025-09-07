@@ -1,6 +1,6 @@
 # Procfiled [![Build Status](https://github.com/scaffoldly/procfiled/actions/workflows/ci.yml/badge.svg)](https://github.com/scaffoldly/procfiled/actions)
 
-Procfiled is a Node.js process manager for Procfile-based applications, inspired by the popular [Foreman](http://ddollar.github.com/foreman/) tool.
+Procfiled is a Node.js process manager for Procfile-based applications, inspired by the popular [Foreman](http://ddollar.github.com/foreman/) tool and forked from [node-foreman](https://github.com/strongloop/node-foreman).
 
 > Procfiled is a manager for Procfile-based applications.
 > Its aim is to abstract away the details of the Procfile
@@ -19,9 +19,9 @@ Get usage
 
 ## Features
 
-* Each worker has an additional automatic environment variable,
+- Each worker has an additional automatic environment variable,
   `PROCFILED_WORKER_NAME`, that contains the process name and worker number.
-  * example: `web.1`, `worker.1`
+  - example: `web.1`, `worker.1`
 
 ### How to Contribute
 
@@ -65,10 +65,10 @@ for production.
 
 For more information try any of the following:
 
-	$ procfiled --help
-	$ procfiled start --help
-	$ procfiled run --help
-	$ procfiled export --help
+    $ procfiled --help
+    $ procfiled start --help
+    $ procfiled run --help
+    $ procfiled export --help
 
 ### Procfile
 
@@ -113,7 +113,7 @@ There is no need to specify which type of file you wish to use.
 
 The `PATH` variable is given special treatment and is always read
 from the environment that the `procfiled` command has been executed from,
-rather than your `.env` file.  To set a different `PATH` execute
+rather than your `.env` file. To set a different `PATH` execute
 `procfiled` with the `PATH` variable set appropriately.
 
 ```bash

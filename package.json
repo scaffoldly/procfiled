@@ -1,6 +1,6 @@
 {
   "name": "procfiled",
-  "version": "0.0.1-0",
+  "version": "4.0.0",
   "homepage": "https://github.com/scaffoldly/procfiled",
   "description": "Node.js process manager for Procfile-based applications",
   "author": "Scaffoldly <github.com/scaffoldly>",
@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "pretest": "jshint .",
-    "test": "tap test/*.test.*"
+    "test": "tap test/*.test.*",
+    "build:exe": "pkg nf.js --compress Brotli --output dist/procfiled --targets node22-linuxstatic-x64,node22-linuxstatic-arm64"
   },
   "dependencies": {
     "commander": "^2.15.1",
@@ -41,10 +42,11 @@
     "email": "security@scaffold.ly"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "preferGlobal": true,
   "devDependencies": {
+    "@yao-pkg/pkg": "^6.6.0",
     "chai": "~1.9.1",
     "jshint": "^2.6.3",
     "rimraf": "~2.2.8",
