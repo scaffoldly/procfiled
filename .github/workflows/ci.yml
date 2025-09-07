@@ -132,7 +132,7 @@ jobs:
   prerelease:
     runs-on: ubuntu-latest
     needs: [quality-checks, unit-tests]
-    name: Pre-release to NPM
+    name: Pre-release to NPM & GHCR
     if: |
       success() &&
       github.ref == 'refs/heads/procfiled' &&
